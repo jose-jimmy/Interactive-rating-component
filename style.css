@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/*Primary setup*/
+:root{
+    --clr-primary-400: hsl(25,97%,53%);
+    
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-200: hsl(217, 12%, 63%);
+    --clr-neutral-300: hsl(216, 12%, 54%);
+    --clr-neutral-600: hsl(213, 19%, 18%);
+    --clr-neutral-900: hsl(216, 12%, 8%);
+
+    --fw-bold:700;
+    --fw-regular:400;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*8. Create a root stacking context */ #root,
+#__next {
+    isolation: isolate;
+}
+
+
+/*General Styling*/
+body{
+    font-family: 'Overpass', sans-serif;
+    font-weight: var(--fw-regular);
+    font-size: 1rem;
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-neutral-900);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    margin: 1.5rem;
+    overflow: hidden;
+}
+
+/*Card Styling*/
+.main-container, .thankyou{
+    background-color: var(--clr-neutral-600);
+    padding: 1.5rem;
+    border-radius: 0.625rem;
+    display: grid;
+    text-align: center;
+    max-width: 400px; 
+}
+
+.main-container img{
+    background-color:hsl(213, 20%, 22%) ;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.main-container h2{
+  color: var(--clr-neutral-100);
+  margin: 2rem 0 1rem;
+}
+
+.main-container p{
+  color: var(--clr-neutral-200);
+  margin-bottom: 1rem;
+}
+
+.rating{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+/*Rating button*/
+.btn{
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(213, 20%, 22%);
+  color: var(--clr-neutral-100);
+  padding-top: 0.2rem;
+  cursor:pointer;
+  transition: 0.3s;
+}
+
+.btn:hover{
+  background-color:var(--clr-primary-400) ;
+}
+
+.btn:focus{
+  background-color: var(--clr-neutral-300);
+}
+
+/*Submit button*/
+.submit_btn{
+  background-color: var(--clr-primary-400);
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 100vw;
+  border-style: none;
+  color: var(--clr-neutral-100);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit_btn:hover{
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-primary-400);
+}
+
+/*Thankyou component*/
+.thankyou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.thankyou img{
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+.display_selected{
+  background-color: hsl(213, 20%, 22%);
+  border-radius: 30px;
+  font-size: 0.9rem;
+  color: var(--clr-primary-400);
+  padding: 0.2rem 0.5rem 0;
+  margin-bottom: 2rem;
+}
+
+.thankyou h2{
+  color: var(--clr-neutral-100);
+  margin-bottom: 1rem;
+}
+
+.gray{
+  color: var(--clr-neutral-300);
+  margin-bottom: 2rem;
+}
+
+.hidden{
+  display: none;
+}
