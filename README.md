@@ -43,8 +43,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/jose-jimmy/Interactive-rating-component)
-- Live Site URL:(https://interactive-rating-component-git-main-jose-jimmy.vercel.app/)
+- Solution URL: [GtHub](https://github.com/jose-jimmy/Interactive-rating-component)
+- Live Site URL:[Vercel](https://interactive-rating-component-git-main-jose-jimmy.vercel.app/)
 
 ## My process
 
